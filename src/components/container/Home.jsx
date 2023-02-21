@@ -22,17 +22,13 @@ const Home = () => {
     visible: { y: 0, opacity: 1 },
   };
   return (
-    <div className="section" id="home">
+    <div className="container mx-auto pb-30 pt-24 md:pt-48" id="home">
       <div className="md:flex items-center justify-center">
-        <div className="pr-10">
-          <div className="font-bold text-xs text-blue-500 mb-4">
-            {" "}
-            your e-service partner
-          </div>
-          <div className="md:text-8xl text-2xl font-bold ">
+        <div className="md:mr-10 mx-6">
+          <div className="md:text-8xl sm:text-6xl text-3xl font-bold ">
             SECURITY <br /> SERVICES <br /> 
           </div>
-          <p className="text-sm leading-7 text-gray max-w-sm">
+          <p className="text-sm sm:text-xl leading-7 text-gray max-w-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
             officia sit vitae quo, eum similique?
           </p>
@@ -45,11 +41,11 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="md:w-[60%] w-[80%]">
+        <div className="md:w-[60%] w-[80%] md:ml-10">
           <img src={hero} alt="" />
         </div>
       </div>
-      <div className="pt-20">
+      {/* <div className="pt-20">
         <p className="text-center text-xl">
           We have provided security{" "}
           <span className="text-blue-500">
@@ -68,7 +64,7 @@ const Home = () => {
             </motion.div>
           ))}
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 };

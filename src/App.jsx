@@ -2,7 +2,6 @@ import {
   Navbar,
   Home,
   About,
-  Teacher,
   Contact,
   Courses,
   Footer,
@@ -15,7 +14,6 @@ function App() {
       <Home />
       <About />
       <Courses />
-      <Teacher />
       <Contact />
       <Footer />
     </div>

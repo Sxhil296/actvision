@@ -1,5 +1,5 @@
-import { FiPenTool } from "react-icons/fi";
-import { FaLaptopCode } from "react-icons/fa";
+import { BiWebcam } from "react-icons/bi";
+import { BiFingerprint } from "react-icons/bi";
 import { BsBarChartLine } from "react-icons/bs";
 import { MdOutlineScience } from "react-icons/md";
 
@@ -39,24 +39,19 @@ export const navLinks = [
     id: 4,
     href: "team",
     link: "Team",
-  },
-  // {
-  //   id: 5,
-  //   href: "contact",
-  //   link: "Contact",
-  // },
+  }
 ];
 
 export const categories = [
   {
     id: 1,
-    icon: <FiPenTool />,
-    category: "Design",
+    icon: <BiWebcam />,
+    category: "Security Camera",
   },
   {
     id: 2,
-    icon: <FaLaptopCode />,
-    category: "Development",
+    icon: <BiFingerprint />,
+    category: "Fingerprint Scanner",
   },
   {
     id: 3,
@@ -147,21 +142,21 @@ export const courses = [
 
 export const logos = [logo1, logo2, logo3, logo4, logo5, logo6];
 
-export const accordions = [
-  {
-    id: 1,
-    title: "What is Skillex?",
-  },
-  {
-    id: 2,
-    title: "What can I learn from Skillex?",
-  },
-  {
-    id: 3,
-    title: "Can I teach on Skillex?",
-  },
-  {
-    id: 4,
-    title: "What is included in my Skillex membership?",
-  },
-];
+// export const accordions = [
+//   {
+//     id: 1,
+//     title: "What is Skillex?",
+//   },
+//   {
+//     id: 2,
+//     title: "What can I learn from Skillex?",
+//   },
+//   {
+//     id: 3,
+//     title: "Can I teach on Skillex?",
+//   },
+//   {
+//     id: 4,
+//     title: "What is included in my Skillex membership?",
+//   },
+// ];

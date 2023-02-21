@@ -21,12 +21,11 @@ const Courses = () => {
     },
   };
   return (
-    <div className="section" id="courses">
-      <div className="text-center">
-        <div className="sm:text-3xl text-2xl font-bold mb-5">
-          Our Top <span className="text-blue-500">Services</span>
-        </div>
-        <p className="text-sm text-gray leading-7 max-w-[700px] mx-auto">
+    <div className="container mx-auto py-20" id="services">
+        <div className="md:mb-16 sm:mb-14 md:text-[100px] sm:text-8xl text-4xl font-bold text-white ml-6 mb-6">
+          <div className="md:mb-14">Services</div>
+    
+        <p className="md:text-xl text-sm text-gray leading-7 max-w-[700px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
           tempora illo laborum ex cupiditate tenetur doloribus non velit atque
           amet repudiandae ipsa modi numquam quas odit optio, totam voluptate
@@ -37,20 +36,12 @@ const Courses = () => {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8"
+        className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8 mx-6"
       >
         {categories.map((category) => {
           return <Categories key={category.id} {...category} />;
         })}
       </motion.div>
-      {/* <div className="text-xl font-bold mt-32">Most Popular Courses</div>
-      <div className="mt-12 overflow-x-hidden w-full  relative">
-        <div className="flex gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%] animate-slide">
-          {courses.map((course) => {
-            return <Course key={course.id} {...course} />;
-          })}
-        </div>
-      </div> */}
     </div>
   );
 };
