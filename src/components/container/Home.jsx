@@ -2,6 +2,7 @@ import React from "react";
 import hero from "../../assets/hero.png";
 import { logos } from "../../Data";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 const Home = () => {
   const container = {
     hidden: {
@@ -33,12 +34,14 @@ const Home = () => {
             officia sit vitae quo, eum similique?
           </p>
           <div className="mt-6">
+            <Link to="services" smooth duration={500}>
             <button className="px-6 py-3 font-bold text-white bg-blue-500 rounded-lg mr-4 text-sm">
               Services
             </button>
-            <button className="px-6 py-3 font-bold border border-solid border-blue-500 rounded-lg text-sm">
+            </Link>
+           <Link to="contact" smooth duration={500}> <button className="px-6 py-3 font-bold border border-solid border-blue-500 rounded-lg text-sm">
               Contact
-            </button>
+            </button></Link>
           </div>
         </div>
         <div className="md:w-[60%] w-[80%] md:ml-10">
