@@ -14,9 +14,6 @@ const Categories = ({ icon, category }) => {
     >
       <div className="text-4xl text-blue-500">{icon}</div>
       <div>{category}</div>
-      <a href="" className="text-sm text-gray">
-        View More
-      </a>
     </motion.div>
   );
 };

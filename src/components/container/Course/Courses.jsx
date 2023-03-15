@@ -1,8 +1,6 @@
 import React from "react";
 import { categories } from "../../../Data";
-import { courses } from "../../../Data";
 import Categories from "./Categories";
-import Course from "./Course";
 import { motion } from "framer-motion";
 
 const Courses = () => {
